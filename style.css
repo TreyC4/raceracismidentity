@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  background: white; 
+  text-align: center;
+}
+
 .box {
   background: lightblue;
   width: 500px;
@@ -6,8 +12,6 @@
   transition: transform 5s linear, width 5s;
   transform-origin: left;
   transform-style: preserve-3D;
-  width-origin: left;
-  width-style: preserve-3D;
 }
 
 .box-rotate {
