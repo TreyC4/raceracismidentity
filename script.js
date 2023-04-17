@@ -1,4 +1,8 @@
+('button').hover(function () {
 
+  ('.box').toggleClass('box');
+
+});
 
 const track = document.getElementById("image-track");
 
@@ -24,6 +28,7 @@ const handleOnMove = e => {
         nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
   
   track.dataset.percentage = nextPercentage;
+  track.dataset.nextPercentage = nextPercentage;
   console.log(nextPercentage);
   
 }

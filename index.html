@@ -1,5 +1,37 @@
 <div class="box" id="box"></div>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0"></div> 
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" data-next-percentage="0"></div> 
 <button>hover me</button>
+<html>
+<body>
+   <h2> Use <i> width style property </i> to set a width of an element </h2>
+   <div id = "container">
+      <label for = "number"> Type number of element: </label>
+      <input type = "number" id = "number" value = "0" name = "numbers"/><br>
+      <label for = "Range"> Select Width: </label>
+      <input type = "range" min = "1" max = "100" value = "50" id = "Range">
+      <div id = "shapes">
+      </div>
+   </div>
+   <script>
+    const track = getElementById("image-track");
+      var container = document.getElementById("shapes");
+      document.getElementById("Range").onchange = function(){
+         var input = document.getElementById("Range").value;
+         var input2 = document.getElementById("number").value;
+         for(i=0 ; i<input2 ; i++){
+            var element = document.createElement("div");
+            element.style.backgroundColor = "red";
+            element.style.height = "10%";
+            element.style.margin = "1%"
+            element.style.border = "2px solid red";
+            element.style.borderRadius = "50%";
+            element.style.width = input*track.dataset.nextPercentage + "px";
+            input = input - (1/3 * input);
+            container.appendChild(element);
+         }
+      }
+   </script>
+</body>
+</html>
