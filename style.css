@@ -1,26 +1,4 @@
-body{
-  margin: 0;
-  background: white; 
-  text-align: center;
-}
 
-.wrapper {
-  border: 3px solid blue;
-}
-
-.container {
-  background-color: pink;
-}
-
-.barCompleted {
-  background-color: lightblue;
-  width: 80%;
-}
-
-.label {
-  font-size: 20px;
-  color: green;
-}
 
 .box {
   background: lightblue;
