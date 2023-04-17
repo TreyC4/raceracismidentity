@@ -1,8 +1,4 @@
-('button').hover(function () {
 
-  ('.box').toggleClass('box');
-
-});
 
 const track = document.getElementById("image-track");
 
