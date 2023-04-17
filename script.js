@@ -1,6 +1,6 @@
-$('button').hover(function () {
+('button').hover(function () {
 
-  $('.box').toggleClass('box');
+  ('.box').toggleClass('box');
 
 });
 
